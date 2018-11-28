@@ -76,7 +76,7 @@ function updateDB(userid, stock, cost) {
     var query = "UPDATE products SET ? WHERE ?";
     connection.query(query, [{ stock_quantity: stock }, { id: userid }], function (error) {
         if (error) throw error;
-        purchase();
+        another();
     });
 }
 
