@@ -108,23 +108,11 @@ function addProduct() {
             name: "newItem",
             type: "input",
             message: "Please enter the name of the new product.",
-            validate: function (value) {
-                if (isNaN(value) === false) {
-                    return true;
-                }
-                return false;
-            }
         },
         {
             name: "newDept",
             type: "input",
             message: "Please enter the product's department.",
-            validate: function (value) {
-                if (isNaN(value) === false) {
-                    return true;
-                }
-                return false;
-            }
         },
         {
             name: "newPrice",
